@@ -1,0 +1,50 @@
+.bg-login{
+    background-color: #39DD27;
+    height: 820px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 390px;
+        margin: 6rem auto 8.1rem auto;
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+}
+
+#email{
+    margin-top: 30px;
+}
+
+#password{
+    margin-top:30px ;
+}
+
+#bt-login{
+    width: 120px;
+    background-color: #39DD27;
+    outline: #39DD27;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#bt-login :hover{
+    background-color: #fff;
+    color: #39DD27;
+}
+
+.label{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title{
+    font-family: Sansation;
+    font-size: 36px;
+}
