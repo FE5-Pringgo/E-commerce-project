@@ -2,6 +2,7 @@ import "./Styles/App.css";
 import React from "react";
 import Login from "./View/login.jsx";
 import Register from "./View/register.jsx";
+import Home from "./View/homePage";
 import DetailProduct from "./View/detail.jsx";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       {/* <Login /> */}
       {/* <Register /> */}
-      <DetailProduct />
+      <Home />
+      {/* <DetailProduct /> */}
     </div>
   );
 }

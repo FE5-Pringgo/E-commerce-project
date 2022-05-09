@@ -1,95 +1,95 @@
 .background {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF3F3;
-    width: 1300px;
-    height: 100px;
-    border-radius: 10px;
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff3f3;
+  width: 1300px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 .span-category {
-    margin-left: 50px;
-    color: #7D7878;
-    font-size: 24px;
+  margin-left: 50px;
+  color: #7d7878;
+  font-size: 24px;
 }
 
-.bg-detail{
-    display: flex;
-    justify-content: center;
+.bg-detail {
+  display: flex;
+  justify-content: center;
 }
 
-.back-detail{
-    display: flex;
-    justify-content: left;
-    background-color: #39DD27;
-    width: 1300px;
-    height: 630px;
+.back-detail {
+  display: flex;
+  justify-content: left;
+  background-color: #39dd27;
+  width: 1300px;
+  height: 630px;
 }
 
-.picture{
-    width: 250px;
-    height: 250px;
-    padding: 10px 20px 20px 10px;
-    margin-left: 15px;
+.picture {
+  width: 250px;
+  height: 250px;
+  padding: 10px 20px 20px 10px;
+  margin-left: 15px;
 }
 
-.card-detail{
-    margin-left: 150px;
-    margin-top: 50px;
+.card-detail {
+  margin-left: 150px;
+  margin-top: 50px;
 }
 
-.text-detail{
-    text-align:justify;
+.text-detail {
+  text-align: justify;
 }
 
-.body{
-    height: fit-content;
+.body {
+  height: fit-content;
 }
 
-.btn-detail{
-    background-color: #FEF9F9;
-    color: #7D7878;
-    border-color: #7D7878;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 15px;
+.btn-detail {
+  background-color: #fef9f9;
+  color: #7d7878;
+  border-color: #7d7878;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
-.background-desc{
-    display: flex;
-    justify-content: center;
+.background-desc {
+  display: flex;
+  justify-content: center;
 }
-.back-desc{ 
-    width: 1300px;
-}
-
-.desc-product{
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.back-desc {
+  width: 1300px;
 }
 
-.desc-detail{
-    text-align: justify;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.desc-product {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.bg-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+.desc-detail {
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.span-footer{
-    margin-left: 50px;
-    font-size: 24px;
+.bg-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.span-footer {
+  margin-left: 50px;
+  font-size: 24px;
 }
