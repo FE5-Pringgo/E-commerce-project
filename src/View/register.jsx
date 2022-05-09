@@ -6,7 +6,7 @@ import "../Styles/register.css";
 export default function login() {
   return (
     <div className='bg-login'>
-        <Card className='card' border='secondary' style={{ width: '30rem'}}>
+        <Card className='cardbox' border='secondary' style={{ width: '30rem'}}>
             <Card.Body className='card-body'>
                 <Card.Title className='title'>Welcome to Tokopelia</Card.Title>
                 <Form>
