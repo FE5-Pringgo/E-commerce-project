@@ -1,5 +1,5 @@
-.bg-login{
-    background-color: #39DD27;
+.bg-register{
+    background-color: #5AAC7B;
     height: 820px;
 
     display: flex;
@@ -24,16 +24,16 @@
     margin-top:30px ;
 }
 
-#bt-login{
+#bt-register{
     width: 120px;
-    background-color: #39DD27;
-    outline: #39DD27;
+    background-color: #2C3E50;
+    outline: #2C3E50;
     color: #fff;
     margin-top: 30px;
     border-radius: 20px;
 }
 
-#bt-login :hover{
+#bt-register :hover{
     background-color: #fff;
     color: #39DD27;
 }
