@@ -26,17 +26,17 @@ function Order() {
           <div className="mt-5 ">
             <h6 className="label-style">Shipping Adress</h6>
             <div className="form-style mt-3  border border-3 rounded p-5 w-50">
-              <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="Street" />
+              <Form.Group className="ms-5 mt-3 mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Control className="control-input" type="email" placeholder="Street" />
               </Form.Group>
               <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="City" />
+                <Form.Control className="control-input" type="email" placeholder="City" />
               </Form.Group>
               <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="State/Province" />
+                <Form.Control className="control-input" type="email" placeholder="State/Province" />
               </Form.Group>
               <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="Zip Code" />
+                <Form.Control className="control-input" type="email" placeholder="Zip Code" />
               </Form.Group>
             </div>
           </div>
@@ -46,13 +46,13 @@ function Order() {
             <h6 className="label-style">Credit Card</h6>
             <div className="form-style mt-3 border border-3 rounded p-5 w-50">
               <Form.Group className="ms-5 mt-3 mb-3 w-25 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="" />
+                <Form.Control className="control-input" type="email" placeholder="" />
               </Form.Group>
               <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="Name On Card" />
+                <Form.Control className="control-input" type="email" placeholder="Name On Card" />
               </Form.Group>
               <Form.Group className="ms-5 mt-3 mb-3 w-75 " controlId="exampleForm.ControlInput1">
-                <Form.Control className="" type="email" placeholder="Card Number" />
+                <Form.Control className="control-input" type="email" placeholder="Card Number" />
               </Form.Group>
 
               <div className="d-flex justify-content-start">
