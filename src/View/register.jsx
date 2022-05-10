@@ -3,7 +3,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Card, Form } from 'react-bootstrap';
 import "../Styles/register.css";
 
-export default function login() {
+export default function Register() {
+    const [fullname,setFullname]    = useState('');
+    const [email,setEmail]          = useState(''); 
+    const [phone,setPhone]          = useState('');
+    const [password,setPassword]    = useState('');
+
+    const changeFullname = (e) => {
+        const value = e.target.value;
+        setFullname(value);
+    }
+
+    const changeEmail = (e) =>{
+        const value = e.target.value;
+        setEmail(value);
+    }
+
+    const changePhone = (e) => {
+        const value = e.target.value;
+        setPhone(value);
+    }
+
+    const changePassword = (e) => {
+        const value = e.target.value;
+        setPassword(value);
+    }
+
+
   return (
     <div className='bg-login'>
         <Card className='cardbox' border='secondary' style={{ width: '30rem'}}>
@@ -12,27 +38,27 @@ export default function login() {
                 <Form>
                 <Form.Group id='fullname' className="mb-3" controlId="formBasicEmail">
                         <p className='label'>Fullname<span className='required'>*</span> </p>
-                        <Form.Control className='form-control' type="name" placeholder="Enter fullname" />
+                        <Form.Control className='Control2' type="text" placeholder="Enter fullname" value={fullname} onChange={changeFullname} />
                     </Form.Group>
 
                     <Form.Group id='email' className="mb-3" controlId="formBasicEmail">
                         <p className='label'>Email address<span className='required'>*</span> </p>
-                        <Form.Control className='form-control' type="email" placeholder="Enter email" />
+                        <Form.Control className='Control2' type="text" placeholder="Enter email" value={email} onChange={changeEmail} />
                     </Form.Group>
 
                     <Form.Group id='phone' className="mb-3" controlId="formBasicEmail">
                         <p className='label'> Phone Number </p>
-                        <Form.Control className='form-control' type="number" placeholder="Enter phone number" />
+                        <Form.Control className='Control2' type="text" placeholder="Enter phone number"  value={phone} onChange={changePhone}/>
                     </Form.Group>
 
                     <Form.Group id='password' className="mb-3" controlId="formBasicEmail">
                         <p className='label'> Password<span className='required'>*</span></p>
-                        <Form.Control className='form-control' type="password" placeholder="Enter password" />
+                        <Form.Control className='Control2' type="password" placeholder="Enter password"  value={password} onChange={changePassword}/>
                     </Form.Group>
 
                     <Form.Group id='password' className="mb-3" controlId="formBasicPassword">
                         <p className='label'> Confirm Password<span className='required'>*</span></p>
-                        <Form.Control className='form-control' type="password" placeholder="Confirm Password" />
+                        <Form.Control className='Control2' type="password" placeholder="Confirm Password" />
                     </Form.Group>
                     <Button id='bt-login' variant="" type="submit">
                         Register
