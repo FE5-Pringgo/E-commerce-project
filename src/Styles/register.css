@@ -54,7 +54,8 @@
     color: red;
 }
 
-.form-control{
+.Control2{
     background-color: lightgrey;
     color: #FCF6F6;
+    width: 50vh;
 }

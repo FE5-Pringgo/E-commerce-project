@@ -44,9 +44,6 @@ export default function Register() {
 
     }
 
-
-
-
   return (
     <div className='bg-register'>
         <Card className='cardbox' border='secondary' style={{ width: '30rem'}}>

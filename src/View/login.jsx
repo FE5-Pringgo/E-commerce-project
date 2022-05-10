@@ -4,6 +4,7 @@ import { Button,Card, Form } from 'react-bootstrap';
 import "../Styles/login.css";
 
 export default function Login() {
+  
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
 
@@ -20,7 +21,6 @@ export default function Login() {
     const handleSubmit = () =>{
         console.log('di klik');
     }
-
 
 
   return (
