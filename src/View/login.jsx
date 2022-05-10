@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Card, Form } from 'react-bootstrap';
 import "../Styles/login.css";
 
-export default function login() {
+export default function Login() {
   return (
     <div className='bg-login'>
         <Card className='card' border='secondary' style={{ width: '23rem'}}>
