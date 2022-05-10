@@ -23,6 +23,13 @@ export default function cart() {
                 <div className='shopping'> 
                     <Container className='container'>
                         <Row className='row'>
+                            <Col className='column-0' xs= {1}>
+                                <Form className='check-form'>
+                                    <Form.Check 
+                                        id='check'
+                                    />
+                                </Form>
+                            </Col>
                             <Col className='column-1'md="auto">
                                 <p className='shopping-cart'> Shopping Cart</p>
                                 <img className='product' src={Andrea} alt="" />
@@ -37,7 +44,7 @@ export default function cart() {
                                 <div className='quantity-bg'>
                                     <Form className='quantity'>
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextQuantity">
-                                            <Form.Label column sm="2">
+                                            <Form.Label column sm="3" className='cart-label'>
                                             Quantity
                                             </Form.Label>
                                             <Col sm="10">
@@ -46,7 +53,7 @@ export default function cart() {
                                         </Form.Group>
 
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextSubtotal">
-                                            <Form.Label column sm="2">
+                                            <Form.Label column sm="3" className='cart-label'>
                                             Subtotal
                                             </Form.Label>
                                             <Col sm="10">
@@ -54,11 +61,21 @@ export default function cart() {
                                             </Col>
                                         </Form.Group>
                                     </Form>
+                                    <div className='btn'>
+                                        <Button className='btn-cart1' variant="secondary">Remove</Button>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>
 
                         <Row className='row'>
+                            <Col className='column-0' xs= {1}>
+                                <Form className='check-form'>
+                                    <Form.Check 
+                                        id='check'
+                                    />
+                                </Form>
+                            </Col>
                             <Col className='column-1'md="auto">
                                 <p className='shopping-cart'> Shopping Cart</p>
                                 <img className='product' src={Andrea} alt="" />
@@ -73,7 +90,7 @@ export default function cart() {
                                 <div className='quantity-bg'>
                                     <Form className='quantity'>
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextQuantity">
-                                            <Form.Label column sm="2">
+                                            <Form.Label column sm="3" className='cart-label'>
                                             Quantity
                                             </Form.Label>
                                             <Col sm="10">
@@ -82,7 +99,7 @@ export default function cart() {
                                         </Form.Group>
 
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextSubtotal">
-                                            <Form.Label column sm="2">
+                                            <Form.Label column sm="3" className='cart-label'>
                                             Subtotal
                                             </Form.Label>
                                             <Col sm="10">
@@ -90,9 +107,14 @@ export default function cart() {
                                             </Col>
                                         </Form.Group>
                                     </Form>
+                                    <div className='btn'>
+                                        <Button className='btn-cart1' variant="secondary">Remove</Button>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>
+
+                        
                     </Container>
                 </div>
 
@@ -126,7 +148,9 @@ export default function cart() {
                             </Col>
                         </Form.Group>
                     </Form>
-                        <Button className='btn-total' variant="secondary">Order</Button>{' '}
+                        <div className='button-total'>
+                            <Button className='btn-total' variant="secondary">Order</Button>{' '}
+                        </div>
                 </div>
             </div>
 
