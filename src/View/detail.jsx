@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, Form } from "react-bootstrap";
 import Logo from "../Image/logo_fix.png";
 import "../Styles/detail.css";
+import { Icon } from '@iconify/react';
 
 export default function detail() {
   return (
@@ -17,29 +18,27 @@ export default function detail() {
             <span className="span-category"> Style </span>
           </div>
         </div>
-      </div>
 
-      <div className="bg-detail">
-        <div className="back-detail">
-          <Card className="card-detail" style={{ width: "20rem", height: "500px" }}>
-            <Card.Img className="picture" variant="top" src={Logo} />
-            <Card.Body>
-              <Card.Title>Buku </Card.Title>
-              <Card.Text className="text-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</Card.Text>
-              <Button className="btn-detail">Add To Chart</Button>
-            </Card.Body>
-          </Card>
-        </div>
-      </div>
+        <Container className='container1'>
+            <Row className='row-detail'>
+                <Col className='column1' sm={1}>
+                    <Icon className='back-icon' icon="uil:arrow-circle-left" />
+                </Col>
 
-      <div className="background-desc">
-        <div className="back-desc">
-          <h2 className="desc-product">Product Description</h2>
-          <p className="desc-detail">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam asperiores explicabo earum quaerat pariatur sint voluptates modi magnam, facilis sapiente assumenda, reprehenderit obcaecati veritatis labore? At odit vel quos unde!
-          </p>
-        </div>
-      </div>
+                <Col className='column2' sm={6}>
+                    <img className='picture-detail' src={Logo} alt="" />
+                </Col>
+
+                <Col className='column3' sm={5}>
+                    <p className='prod-title'>Product Title</p>
+                    <p className='prod-price'>Rp 80.000</p>
+                    <p className='desc-detail' > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at architecto reiciendis facilis. Autem molestias, architecto fugit illum tenetur perspiciatis 
+                        alias earum asperiores laboriosam pariatur, ipsa non eos quis nostrum!</p>
+                        <Button className='btn-detail' variant='outline-dark'>Add to Chart</Button>{' '}
+                </Col>
+            </Row>
+        </Container>
+      
 
       <div className="bg-footer">
         <div className="back-footer">
