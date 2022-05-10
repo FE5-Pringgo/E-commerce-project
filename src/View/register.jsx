@@ -11,27 +11,28 @@ export default function login() {
                 <Card.Title className='title'>Welcome to Tokopelia</Card.Title>
                 <Form>
                 <Form.Group id='fullname' className="mb-3" controlId="formBasicEmail">
-                        <p className='label'>Fullname</p>
-                        <Form.Control type="name" placeholder="Enter fullname" />
+                        <p className='label'>Fullname<span className='required'>*</span> </p>
+                        <Form.Control className='form-control' type="name" placeholder="Enter fullname" />
                     </Form.Group>
+
                     <Form.Group id='email' className="mb-3" controlId="formBasicEmail">
-                        <p className='label'>Email address</p>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <p className='label'>Email address<span className='required'>*</span> </p>
+                        <Form.Control className='form-control' type="email" placeholder="Enter email" />
                     </Form.Group>
 
                     <Form.Group id='phone' className="mb-3" controlId="formBasicEmail">
-                        <p className='label'>Phone Number</p>
-                        <Form.Control type="number" placeholder="Enter phone number" />
+                        <p className='label'> Phone Number </p>
+                        <Form.Control className='form-control' type="number" placeholder="Enter phone number" />
                     </Form.Group>
 
-                    <Form.Group id='address' className="mb-3" controlId="formBasicEmail">
-                        <p className='label'> Address</p>
-                        <Form.Control type="address" placeholder="Enter Address" />
+                    <Form.Group id='password' className="mb-3" controlId="formBasicEmail">
+                        <p className='label'> Password<span className='required'>*</span></p>
+                        <Form.Control className='form-control' type="password" placeholder="Enter password" />
                     </Form.Group>
 
                     <Form.Group id='password' className="mb-3" controlId="formBasicPassword">
-                        <p className='label' >Password</p>
-                        <Form.Control type="password" placeholder="Password" />
+                        <p className='label'> Confirm Password<span className='required'>*</span></p>
+                        <Form.Control className='form-control' type="password" placeholder="Confirm Password" />
                     </Form.Group>
                     <Button id='bt-login' variant="" type="submit">
                         Register

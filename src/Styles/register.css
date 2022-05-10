@@ -9,7 +9,7 @@
 
 .cardbox {
         box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-        height: 700px;
+        height: 730px;
         margin: 6rem auto 8.1rem auto;
         border-radius: 20px;
         padding: 20px 20px 20px 20px;
@@ -48,4 +48,13 @@
 .title{
     font-family: Sansation;
     font-size: 36px;
+}
+
+.required {
+    color: red;
+}
+
+.form-control{
+    background-color: lightgrey;
+    color: #FCF6F6;
 }

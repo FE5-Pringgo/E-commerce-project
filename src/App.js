@@ -12,7 +12,7 @@ function App() {
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <Home /> */}
-      <Order />
+//       <Order />
       {/* <DetailProduct /> */}
     </div>
   );
