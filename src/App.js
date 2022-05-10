@@ -10,8 +10,9 @@ import Order from "./View/orderPage.jsx";
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Register />
+
+      {/*<Login /> */}
+      {/* <Register /> */}
       {/* <Home /> */}
       {/* <Order /> */}
       {/* <DetailProduct /> */}
