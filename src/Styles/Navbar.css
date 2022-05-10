@@ -1,0 +1,16 @@
+.background-navbar {
+  background-color: #5aac7b;
+  width: 100%;
+  height: 20vh;
+  margin-left: 0px;
+}
+
+.container-navbar {
+  border-radius: 10px;
+  height: 10vh;
+  background-color: white;
+}
+
+.dropdown-style {
+  font-size: 20px;
+}
