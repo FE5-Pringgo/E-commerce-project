@@ -104,7 +104,7 @@ export default function cart() {
                                 Quantity
                             </Form.Label>
                             <Col sm="10">
-                                <Form.Control className='form-control' type="integer"  />
+                                <Form.Control className='Control1' type="integer"  />
                             </Col>
                         </Form.Group>
 
@@ -113,7 +113,7 @@ export default function cart() {
                                 Shipping
                             </Form.Label>
                             <Col sm="10">
-                                <Form.Control className='form-control' type="Shipping"  />
+                                <Form.Control className='Control1' type="Shipping"  />
                             </Col>
                         </Form.Group>
 
@@ -122,7 +122,7 @@ export default function cart() {
                                 Subtotal
                             </Form.Label>
                             <Col sm="10">
-                                <Form.Control className='form-control' type="total"  />
+                                <Form.Control className='Control1' type="total"  />
                             </Col>
                         </Form.Group>
                     </Form>
