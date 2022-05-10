@@ -7,8 +7,8 @@ import DetailProduct from "./View/detail.jsx";
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Register />
+      <Login />
+      {/* <Register /> */}
       {/* <DetailProduct /> */}
     </div>
   );
