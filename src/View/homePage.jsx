@@ -9,27 +9,100 @@ function Homepage() {
       {/* kategori */}
       <div className="background-category">
         <div className="back">
-          <div className="category">
+          <div className=" category">
             <span className="span-category"> Books </span>
-            <span className="span-category"> Computer </span>
+            <span className=" span-category"> Computer </span>
             <span className="span-category"> Kitchen </span>
             <span className="span-category"> Gadget </span>
-            <span className="span-category"> Style </span>
+            <span className=" span-category"> Style </span>
           </div>
         </div>
       </div>
 
       {/* isi konten */}
-      <div className=" d-flex justify-content-center align-items-center mt-3 ">
-        <div className="background">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={Logo} />
-            <Card.Body>
-              <Card.Title className="card-title">Product Title</Card.Title>
-              <Card.Text className="card-text">$45</Card.Text>
-              <Button>Add to cart</Button>
-            </Card.Body>
-          </Card>
+
+      <div className="background">
+        <div className=" row">
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3 ">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3 ">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3 ">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col-lg-3 col-md-3 sol-sm-3 col-3 ">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={Logo} />
+              <Card.Body>
+                <Card.Title className="card-title">Product Title</Card.Title>
+                <Card.Text className="card-text">$45</Card.Text>
+                <Button className="button-style">Add to cart</Button>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
       </div>
 
