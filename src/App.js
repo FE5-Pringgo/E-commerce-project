@@ -4,6 +4,7 @@ import Login from "./View/login.jsx";
 import Register from "./View/register.jsx";
 import Home from "./View/homePage.jsx";
 import DetailProduct from "./View/detail.jsx";
+import CartDetails from "./View/cart.jsx";
 import Order from "./View/orderPage.jsx";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       {/* <Home /> */}
 //       <Order />
       {/* <DetailProduct /> */}
+//       <CartDetails />
     </div>
   );
 }
