@@ -22,7 +22,7 @@ function Homepage() {
       {/* isi konten */}
 
       <div className="background">
-        <div className=" row">
+        <div className="row">
           <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={Logo} />

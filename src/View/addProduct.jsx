@@ -37,7 +37,7 @@ export default function Login() {
 
   return (
     <div className='bg-add'>
-        <Card className='card' border='secondary' style={{ width: '30rem'}}>
+        <Card className='card-add' border='secondary' style={{ width: '30rem'}}>
             <Card.Body className='card-body'>
                 <Card.Title className='title'>Add Product</Card.Title>
                 <Form>
