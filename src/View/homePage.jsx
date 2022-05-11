@@ -5,23 +5,19 @@ import "../Styles/Home.css";
 import { useNavigate } from "react-router-dom";
 
 function Homepage() {
-
   const navigate = useNavigate();
 
   const clickImage = () => {
-    navigate('/DetailProduct');
-  }
+    navigate("/DetailProduct");
+  };
 
   const clickTitle = () => {
-    navigate('/DetailProduct');
-  }
+    navigate("/DetailProduct");
+  };
 
   const clickCart = () => {
-    navigate('/Cart');
-  }
-
-
-
+    navigate("/Cart");
+  };
 
   return (
     <div className="HomePage">
@@ -44,11 +40,15 @@ function Homepage() {
         <div className=" row">
           <div className="col-lg-3 col-md-3 sol-sm-3 col-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={Logo} onClick={clickImage}/>
+              <Card.Img variant="top" src={Logo} onClick={clickImage} />
               <Card.Body>
-                <Card.Title className="card-title" onClick={clickTitle} >Product Title</Card.Title>
+                <Card.Title className="card-title" onClick={clickTitle}>
+                  Product Title
+                </Card.Title>
                 <Card.Text className="card-text">$45</Card.Text>
-                <Button className="button-style" onClick={clickCart} >Add to cart</Button>
+                <Button className="button-style" onClick={clickCart}>
+                  Add to cart
+                </Button>
               </Card.Body>
             </Card>
           </div>
@@ -126,7 +126,7 @@ function Homepage() {
       </div>
 
       {/* footer */}
-      <div className="bg-footer">
+      <div className="bg-footer-home">
         <div className="back-footer">
           <span className="span-footer">About</span>
           <span className="span-footer">Contact Us</span>

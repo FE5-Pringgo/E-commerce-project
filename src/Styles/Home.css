@@ -61,12 +61,12 @@
   font-size: 24px;
 }
 
-.bg-footer {
+.bg-footer-home {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .span-footer {

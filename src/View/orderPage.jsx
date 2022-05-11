@@ -24,7 +24,7 @@ function Order() {
         <div className="background-content">
           {/* form shipping adress */}
           <div className="mt-5 ">
-            <h6 className="label-style">Shipping Adress</h6>
+            <h6 className="label-style-order">Shipping Adress</h6>
             <div className="form-style mt-3  border border-3 rounded p-5 w-50">
               <Form.Group className="ms-5 mt-3 mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Control className="control-input" type="email" placeholder="Street" />
@@ -43,7 +43,7 @@ function Order() {
 
           {/* form credit card */}
           <div className="mt-5 ">
-            <h6 className="label-style">Credit Card</h6>
+            <h6 className="label-style-order">Credit Card</h6>
             <div className="form-style mt-3 border border-3 rounded p-5 w-50">
               <Form.Group className="ms-5 mt-3 mb-3 w-25 " controlId="exampleForm.ControlInput1">
                 <Form.Control className="control-input" type="email" placeholder="" />
@@ -69,7 +69,7 @@ function Order() {
 
           {/* form review order */}
           <div className="mt-5 ">
-            <h6 className="label-style">Review Order</h6>
+            <h6 className="label-style-order">Review Order</h6>
             <div className="form-style mt-3 border border-3 rounded p-5 w-50">
               <div className="d-flex flex-column flex-start">
                 <h5>Total Quantity: </h5>
@@ -77,7 +77,7 @@ function Order() {
                 <h5>Price:</h5>
               </div>
             </div>
-            <Button className="button-color mt-3 me-0">Purchase</Button>
+            <Button className="button-color-order mt-3 me-0">Purchase</Button>
           </div>
         </div>
       </div>

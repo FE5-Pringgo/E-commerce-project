@@ -100,18 +100,19 @@
 
 .desc-detail {
   text-align: justify;
-  margin-left: 20px;
+  margin-left: -10px;
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 18px;
 }
 
-.bg-footer {
+.bg-footer-detail {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
+  margin-top: 1px;
 }
 
 .span-footer {
