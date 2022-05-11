@@ -7,6 +7,7 @@ import DetailProduct from "./View/detail.jsx";
 import NavbarComponent from "./Component/Navbar.jsx";
 import Cart from "./View/cart.jsx";
 import OrderPage from "./View/orderPage.jsx";
+import AddPage from "./View/addProduct.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* <DetailProduct /> */}
       {/* <Cart /> */}
       {/* <OrderPage /> */}
+      <AddPage />
     </div>
   );
 }

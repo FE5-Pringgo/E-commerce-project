@@ -1,0 +1,48 @@
+.bg-add{
+    background-color: #5AAC7B;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 790px;
+        margin: 6rem auto 8.1rem auto;
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+        margin-top: 130px;
+}
+
+#title, #description, #price, #Quantity, #image{
+    margin-top: 30px;
+}
+
+
+#bt-add{
+    width: 120px;
+    background-color: #2C3E50;
+    outline: #2C3E50;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#bt-add:hover{
+    background-color: grey;
+    color: #fff;
+}
+
+.label{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title{
+    font-family: Sansation;
+    font-size: 36px;
+}
