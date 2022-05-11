@@ -4,8 +4,21 @@ import { Button, Card, Form,Row,Col,Container } from "react-bootstrap";
 import Logo from "../Image/logo_fix.png";
 import "../Styles/detail.css";
 import { Icon } from '@iconify/react';
+import { useNavigate } from "react-router-dom";
 
-export default function detail() {
+export default function Detail() {
+
+
+  const navigate = useNavigate()
+
+  const clickBack = () => {
+    navigate('/Home');
+  }
+
+  const clickCart = () => {
+    navigate('/Cart');
+  }
+
   return (
     <div className="body">
       <div className="background-detail">
@@ -23,7 +36,7 @@ export default function detail() {
     <Container className='container1'>
             <Row className='row-detail'>
                 <Col className='column1' sm={1}>
-                    <Icon className='back-icon' icon="uil:arrow-circle-left"/>
+                    <Icon className='back-icon' icon="uil:arrow-circle-left" onClick={clickBack}/>
                 </Col>
 
                 <Col className='column2' sm={6}>
@@ -35,7 +48,7 @@ export default function detail() {
                     <p className='prod-price'>Rp 80.000</p>
                     <p className='desc-detail' > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at architecto reiciendis facilis. Autem molestias, architecto fugit illum tenetur perspiciatis 
                         alias earum asperiores laboriosam pariatur, ipsa non eos quis nostrum!</p>
-                        <Button className='btn-detail' variant='outline-dark'>Add to Chart</Button>{' '}
+                        <Button className='btn-detail' variant='outline-dark' onClick={clickCart}>Add to Cart</Button>
                 </Col>
             </Row>
         </Container>

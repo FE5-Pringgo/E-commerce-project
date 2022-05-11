@@ -7,12 +7,12 @@
     align-items: center;
 }
 
-.card {
-        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-        height: 490px;
-        margin: 6rem auto 8.1rem auto;
-        border-radius: 20px;
-        padding: 20px 20px 20px 20px;
+.card-login {
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 490px;
+    margin: 6rem auto 8.1rem auto;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 #email{

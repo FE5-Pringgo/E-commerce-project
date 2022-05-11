@@ -25,7 +25,7 @@ export default function Login() {
 
   return (
     <div className='bg-login'>
-        <Card className='card' border='secondary' style={{ width: '23rem'}}>
+        <Card className='card-login' border='secondary' style={{ width: '23rem'}}>
             <Card.Body className='card-body'>
                 <Card.Title className='title'>Welcome to Tokopelia</Card.Title>
                 <Form>
