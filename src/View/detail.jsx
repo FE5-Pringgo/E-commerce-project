@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Card, Form } from "react-bootstrap";
+import { Button, Card, Form,Row,Col,Container } from "react-bootstrap";
 import Logo from "../Image/logo_fix.png";
 import "../Styles/detail.css";
 import { Icon } from '@iconify/react';
@@ -8,7 +8,7 @@ import { Icon } from '@iconify/react';
 export default function detail() {
   return (
     <div className="body">
-      <div className="background">
+      <div className="background-detail">
         <div className="back">
           <div className="category">
             <span className="span-category"> Books </span>
@@ -18,11 +18,12 @@ export default function detail() {
             <span className="span-category"> Style </span>
           </div>
         </div>
+      </div>
 
-        <Container className='container1'>
+    <Container className='container1'>
             <Row className='row-detail'>
                 <Col className='column1' sm={1}>
-                    <Icon className='back-icon' icon="uil:arrow-circle-left" />
+                    <Icon className='back-icon' icon="uil:arrow-circle-left"/>
                 </Col>
 
                 <Col className='column2' sm={6}>
@@ -47,6 +48,6 @@ export default function detail() {
           <span className="span-footer">Help</span>
         </div>
       </div>
-    </div>
+  </div>
   );
 }

@@ -8,7 +8,7 @@ import "../Styles/cart.css";
 export default function cart() {
   return (
     <div>
-            <div className='background'>
+            <div className='background-cart'>
                 <div className='back'>
                     <div className='category'>
                         <span className='span-category'>  Books </span>

@@ -17,14 +17,14 @@
 }
 
 .button-color {
-  background-color: #39dd27;
+  background-color: #2C3E50;
   margin-left: 40vw;
   width: 10vw;
 }
 
 .button-color:hover {
-  background-color: white;
-  color: #39dd27;
+  background-color: grey;
+  color: black;
 }
 
 .back {
