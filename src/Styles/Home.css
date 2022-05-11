@@ -3,7 +3,7 @@
   height: 1000px;
 }
 .background {
-  background-color: #5AAC7B;
+  background-color: #5aac7b;
   color: white;
   width: 65wv;
   height: 1300px;
@@ -11,8 +11,12 @@
   margin-top: 20px;
   margin-left: 1vw;
   margin-right: 10px;
-  padding: 20px;
+  padding: 30px;
   height: auto;
+}
+
+.shadow-card {
+  box-shadow: 4px 5px 4px 1px #5f5e5e;
 }
 
 .card-title {
@@ -28,10 +32,12 @@
 .button-style {
   background-color: white;
   color: black;
+  box-shadow: 1px 2px 6px 0px #5f5e5e;
+  margin-left: 4vw;
 }
 
 .button-style:hover {
-  background-color: #39dd27;
+  background-color: #5aac7b;
   color: white;
 }
 .background-category {
