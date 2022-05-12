@@ -16,7 +16,7 @@ function Homepage() {
 
   const clickTitle = (item) => {
     console.log(item.title);
-    // navigate("/DetailProduct");
+    navigate("/DetailProduct", { item });
   };
 
   const clickCart = () => {

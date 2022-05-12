@@ -34,7 +34,11 @@ export default function Detail() {
       <Container className="container1">
         <Row className="row-detail">
           <Col className="column1" sm={2}>
-            <Icon className="back-icon" icon="uil:arrow-circle-left" onClick={clickBack} />
+            <Icon
+              className="back-icon"
+              icon="uil:arrow-circle-left"
+              onClick={clickBack}
+            />
           </Col>
 
           <Col className="column2" sm={4}>
@@ -42,15 +46,22 @@ export default function Detail() {
           </Col>
 
           <Col className="column3" sm={5}>
-            
-              <p className="prod-title">Product Title</p>
-              <p className="prod-price">Rp 80.000</p>
-            <p className="desc-detail">
-              {" "}
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at architecto reiciendis facilis. Autem molestias, architecto fugit illum tenetur perspiciatis alias earum asperiores laboriosam pariatur, ipsa non eos quis
-              nostrum!
+            <p className="prod-title">Product Title</p>
+            <p className="prod-price">Rp 80.000</p>
+            <p className="prod-stock">
+              Stock <span> 42 </span>{" "}
             </p>
-            <Button className="btn-detail" variant="outline-dark" onClick={clickCart}>
+            <p className="desc-detail">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at
+              architecto reiciendis facilis. Autem molestias, architecto fugit
+              illum tenetur perspiciatis alias earum asperiores laboriosam
+              pariatur, ipsa non eos quis nostrum!
+            </p>
+            <Button
+              className="btn-detail"
+              variant="outline-dark"
+              onClick={clickCart}
+            >
               Add to Cart
             </Button>
           </Col>
