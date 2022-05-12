@@ -2,8 +2,14 @@ import React, {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Card, Form } from 'react-bootstrap';
 import "../Styles/login.css";
+import { useDispatch, useSelector } from 'react-redux'
+import allStore from '../store/actions';
+import axios  from "axios";
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+    const navigate = useNavigate();
+
   
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
@@ -19,11 +25,28 @@ export default function Login() {
     }
 
     const handleSubmit = () =>{
-        console.log('di klik');
+        const body = {
+            email       :email,
+            password    :password
+        }
+        axios.post('http://18.136.202.111:9001/api/v1/login',body)
+        .then(({data}) =>{
+            localStorage.setItem("token",data.data.Token)
+            localStorage.setItem("name",data.data.Data.name)
+
+            navigate('/home');
+        })
+        .catch(err =>{
+            console.log(err);
+        })
+
+
     }
 
 
+
   return (
+
     <div className='bg-login'>
         <Card className='card-login' border='secondary' style={{ width: '23rem'}}>
             <Card.Body className='card-body'>
