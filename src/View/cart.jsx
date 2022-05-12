@@ -20,7 +20,7 @@ export default function cart() {
       </div>
 
       <div className="shopping">
-        <Container className="container">
+        <Container className="container-cart">
           <Row className="row">
             <Col className="column-0" xs={1}>
               <Form className="check-form">

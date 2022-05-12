@@ -42,8 +42,9 @@ export default function Detail() {
           </Col>
 
           <Col className="column3" sm={5}>
-            <p className="prod-title">Product Title</p>
-            <p className="prod-price">Rp 80.000</p>
+            
+              <p className="prod-title">Product Title</p>
+              <p className="prod-price">Rp 80.000</p>
             <p className="desc-detail">
               {" "}
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at architecto reiciendis facilis. Autem molestias, architecto fugit illum tenetur perspiciatis alias earum asperiores laboriosam pariatur, ipsa non eos quis
