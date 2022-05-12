@@ -26,6 +26,17 @@ function NavbarComponent() {
     navigate('/Login');
   }
 
+  const authToken = localStorage.getItem('token');
+  const uname = localStorage.getItem('name');
+
+  const clickLogout = () => {
+    localStorage.clear();
+
+    navigate('/login')
+  }
+  
+
+
 
 
 
@@ -41,12 +52,15 @@ function NavbarComponent() {
               <Button variant="light">Search</Button>
             </Form>
             <img style={{ width: "50px" }} src={cart} alt="" />
-            <Nav.Link onClick={clickRegister}>Register</Nav.Link>
-            <Nav.Link onClick={clickLogin}>Login</Nav.Link>
+            { authToken ? null : <>
+              <Nav.Link onClick={clickRegister}>Register</Nav.Link>
+              <Nav.Link onClick={clickLogin}>Login</Nav.Link>
+            </>
+            }
             <Nav className="me-auto">
-              <NavDropdown className="ms-5 w-25 dropdown-style" title="User" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1" onClick={clickProduct} >Add To product</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Log out</NavDropdown.Item>
+              <NavDropdown className="ms-5 w-25 dropdown-style" title={uname ? uname : "user"} id="collasible-nav-dropdown">
+                <NavDropdown.Item onClick={clickProduct} >Add To product</NavDropdown.Item>
+                <NavDropdown.Item onClick= {clickLogout} >Log out</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
