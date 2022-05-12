@@ -52,17 +52,18 @@ function NavbarComponent() {
               <Button variant="light">Search</Button>
             </Form>
             <img style={{ width: "50px" }} src={cart} alt="" />
-            { authToken ? null : <>
-              <Nav.Link onClick={clickRegister}>Register</Nav.Link>
-              <Nav.Link onClick={clickLogin}>Login</Nav.Link>
-            </>
-            }
-            <Nav className="me-auto">
-              <NavDropdown className="ms-5 w-25 dropdown-style" title={uname ? uname : "user"} id="collasible-nav-dropdown">
-                <NavDropdown.Item onClick={clickProduct} >Add To product</NavDropdown.Item>
-                <NavDropdown.Item onClick= {clickLogout} >Log out</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
+            { authToken ? <>
+                <Nav className="me-auto">
+                  <NavDropdown className="ms-5 w-25 dropdown-style" title={uname ? uname : "user"} id="collasible-nav-dropdown">
+                    <NavDropdown.Item onClick={clickProduct} >Add To product</NavDropdown.Item>
+                    <NavDropdown.Item onClick= {clickLogout} >Log out</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+                </> : <>
+                  <Nav.Link onClick={clickRegister}>Register</Nav.Link>
+                  <Nav.Link onClick={clickLogin}>Login</Nav.Link>
+                </>
+            } 
           </Navbar.Collapse>
         </Container>
       </Navbar>
