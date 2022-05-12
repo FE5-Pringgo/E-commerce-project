@@ -33,7 +33,6 @@
   background-color: white;
   color: black;
   box-shadow: 1px 2px 6px 0px #5f5e5e;
-  margin-left: 4vw;
 }
 
 .button-style:hover {
@@ -43,6 +42,23 @@
 .background-category {
   display: flex;
   justify-content: center;
+}
+
+.body-home{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-home{
+  margin-top: 20px;
+  height: 500px;
+
+}
+
+#btn-home{
+  margin-top: auto;
+  align-self: center;
+  
 }
 
 .back {
