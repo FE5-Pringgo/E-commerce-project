@@ -2,9 +2,10 @@ import React from "react";
 import Logo from "../Image/logo_fix.png";
 import cart from "../Image/shopping-cart.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Nav, Navbar, Container, NavDropdown, Button, Form, FormControl } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown, Button, Form, FormControl, ModalBody } from "react-bootstrap";
 import "../Styles/Navbar.css"; 
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function NavbarComponent() {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ function NavbarComponent() {
   const clickRegister = () => {
     navigate('/Register');
   }
+
 
 
 
