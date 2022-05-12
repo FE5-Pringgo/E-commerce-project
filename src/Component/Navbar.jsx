@@ -17,6 +17,10 @@ function NavbarComponent() {
     navigate('/Home');
   }
 
+  const clickRegister = () => {
+    navigate('/Register');
+  }
+
 
 
   return (
@@ -31,6 +35,7 @@ function NavbarComponent() {
               <Button variant="light">Search</Button>
             </Form>
             <img style={{ width: "50px" }} src={cart} alt="" />
+            <Nav.Link onClick={clickRegister}>Register</Nav.Link>
             <Nav className="me-auto">
               <NavDropdown className="ms-5 w-25 dropdown-style" title="User" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1" onClick={clickProduct} >Add To product</NavDropdown.Item>

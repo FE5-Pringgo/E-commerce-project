@@ -5,6 +5,9 @@ import Andrea from "../Image/andrea.jpeg";
 import "../Styles/cart.css";
 
 export default function cart() {
+
+ 
+
   return (
     <div>
       <div className="background-cart">
@@ -41,11 +44,11 @@ export default function cart() {
               <div className="quantity-bg">
                 <Form className="quantity">
                   <Form.Group as={Row} className="mb-3" controlId="formPlaintextQuantity">
-                    <Form.Label column sm="3" className="cart-label">
+                    <Form.Label column sm="3" className="cart-label" >
                       Quantity
                     </Form.Label>
                     <Col sm="10">
-                      <Form.Control className="form-control" type="integer" />
+                      <Form.Control className="form-control" type="integer"/>
                     </Col>
                   </Form.Group>
 
