@@ -39,6 +39,109 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+
+##Login
+
+* **URL**
+
+`http://18.136.202.111:9001/api/v1/login`
+
+* **Method:**
+
+ `POST`
+ 
+ *  **URL Params**
+
+    None
+
+* **Data Params**
+
+    **Required:**
+
+  ```javascript
+    {
+        name: "user",
+        email: "user@gmail.com",
+    }
+  ```
+
+* **Success Response:**
+
+    * **Code:** 200 <br />
+    **Content:** 
+    ```javascript
+    {
+      token: <token>,
+      message: "success login as <username>"
+    }
+    ```
+ 
+* **Error Response:**
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ message: "username cannot be empty" }`
+  
+  OR
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ message: "email cannot be empty" }`
+  
+  OR
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ message: "email must contain email format" }`
+
+  OR
+
+  * **Code:** 500 INTERNAL SERVER ERROR <br />
+    **Content:** `{ message: "Internal Server Error" }`
+
+**Register**
+----
+  
+* **URL**
+
+  `http://18.136.202.111:9001/api/v1/register`
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+    None
+
+* **Data Params**
+
+    **Required:**
+
+  ```javascript
+    {
+        name: "user",
+        email: "user@gmail.com",
+        phone: "081234556789",
+        password: "12345"
+    }
+  ```
+
+* **Success Response:**
+
+  * **Code:** 201 <br />
+    **Content:** `{ message: "success register" }`
+    ```
+ 
+* **Error Response:**
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ message: "Invalid email / password" }`
+
+  OR
+
+  * **Code:** 500 INTERNAL SERVER ERROR <br />
+    **Content:** `{ message: "Internal Server Error" }`
+
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
